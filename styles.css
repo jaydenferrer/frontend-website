@@ -1,0 +1,36 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+#intro_nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+}
+
+#site_watermark {
+    padding-left: 39.945px;
+}
+#main_navigation ul {
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-around;
+    vertical-align: middle;
+ 
+}
+
+#main_navigation ul li {
+    text-align: center;
+    flex-grow: 1;
+}
+
+#main_navigation a {
+    text-decoration: none;
+    color: black;
+}
+
