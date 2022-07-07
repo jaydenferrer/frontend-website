@@ -1,56 +1,37 @@
-/* body {
-    background-color: black;
-} */
-
 #intro_nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Space Mono', monospace;
-    
-    
-    
+    height: 4rem; 
 }
 
 #site_watermark p {
    width: 50%;
-  
+
 }
 
 #site_watermark {
     display: flex;
     justify-content: flex-start;
-    /* padding-left: 39.945px;
-    padding-top: 20px; */
     width: 50%;
     text-align: center;
     align-items: center;
     
 } 
 
-
 #main_navigation {
-    display: flex;
-  
-
-    /* justify-content: space-around;
-    padding-top: 20px; */
-    
+    display: flex;   
     width: 50%;
     text-align: center;
     justify-content: space-around;
+    align-items: center;
 } 
 
 #main_navigation li {
     width: 12.5%;
-}
-
-/* #main_navigation ul li {
-    text-align: center;
     flex-grow: 1;
-   
-  
-} */
+}
 
 #main_navigation a {
     color: black;
