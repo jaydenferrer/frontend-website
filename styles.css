@@ -1,10 +1,3 @@
-html {
-    margin: 0;
-}
-
-body {
-    margin: 0;
-}
 
 #intro_nav {
     display: flex;
@@ -18,14 +11,15 @@ body {
 #site_watermark {
     padding-left: 39.945px;
     padding-top: 20px;
+
 }
 #main_navigation ul {
     display: flex;
     list-style: none;
-    width: 500px;
+
     justify-content: space-around;
     padding-top: 20px;
-    
+    width: 500px;
    
 
  
@@ -57,6 +51,42 @@ body {
 #main_navigation a:hover {
     /** causes gradient to swap values when hover occurs **/
     background-size: 0 1px, 100% 1px;
+}
+
+#test {
+    border: 1px solid black;
+    height: 50px;
+    
+    
+}
+
+#popup_container {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+#popup_container #test1 {
+    width: 105px;
+}
+
+#popup_container #test2 {
+    width: 115.22px;
+}
+#popup_container #test3 {
+    width: 144.59px;
+}
+#popup_container #test4 {
+    width: 134.8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 
@@ -91,6 +121,8 @@ body {
         margin-top: 10px;
     }
 }
+
+
 
 
 
