@@ -10,15 +10,28 @@ const homeLinkPopup = document.querySelector('#test1');
 
 const mainHamburgerIcon = document.querySelector('#main_nav_hamburger');
 
+
 const mediaQuery500px = window.matchMedia('(max-width: 500px)');
 
 // if (mediaQuery500px.matches) {
 //     console.log("view port is 500px");
 // }
 
+// eventListener that checks if viewport is 500px 
+
 mediaQuery500px.addEventListener('change', function () {
     console.log('viewport is 500px');
-})
+    // if viewport less than 500px, then make it hidden
+    if (mediaQuery500px.matches === true) {
+        // make ul hidden
+        visibilityOff(mainNav);
+    }
+    else {
+        // remove class list?
+        visibilityOn(mainNav);
+    }
+});
+
 function checkVisibility(element) {
     let elementClassList = element.classList;
 
