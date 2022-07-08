@@ -97,13 +97,6 @@
     
 }
 
-.visibility-on {
-    visibility: visible;
-}
-
-.visibility-off {
-    visibility: hidden;
-}
 
 
 
@@ -147,6 +140,7 @@
         /* align-items: center; */
         /* justify-content: center; */
         flex-grow: 1;
+        /* issue */
         /* visibility: hidden; */
         width: 80%;
     }
@@ -160,7 +154,13 @@
     } 
 }
 
+.visibility-on {
+    visibility: visible;
+}
 
+.visibility-off {
+    visibility: hidden;
+}
 
 
 

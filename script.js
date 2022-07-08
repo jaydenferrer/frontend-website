@@ -17,8 +17,10 @@ const mediaQuery500px = window.matchMedia('(max-width: 500px)');
 //     console.log("view port is 500px");
 // }
 
-// eventListener that checks if viewport is 500px 
+// eventListener that checks if viewport is 500px and toggles visibility of main nav
 
+// have to fix issue that when you originally load the page at a smaller viewport, it waits until a change occurs 
+// seems to be fixed when you set the default at 500px to be hidden in media query
 mediaQuery500px.addEventListener('change', function () {
     console.log('viewport is 500px');
     // if viewport less than 500px, then make it hidden
@@ -81,13 +83,13 @@ navLink.addEventListener('mouseout', function () {
 
 mainHamburgerIcon.addEventListener('click', function () {
     // if the mainHamburger is visible, then when it is clicked we want to hide
-    if (checkVisibility(mainHamburgerIcon)) {
+    if (checkVisibility(mainNav)) {
         // hide the menu
-        visibilityOff();
+        visibilityOff(mainNav);
     }
     else {
         // show the menu
-        visibilityOn();
+        visibilityOn(mainNav);
     }
 })
 
