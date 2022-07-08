@@ -97,6 +97,13 @@
     
 }
 
+.visibility-on {
+    visibility: visible;
+}
+
+.visibility-off {
+    visibility: hidden;
+}
 
 
 
@@ -136,10 +143,11 @@
     }
     #main_navigation {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+ 
+        /* align-items: center; */
+        /* justify-content: center; */
         flex-grow: 1;
-        visibility: hidden;
+        /* visibility: hidden; */
         width: 80%;
     }
     #main_nav_hamburger {
@@ -149,9 +157,7 @@
     }
     #main_nav_hamburger:hover {
         cursor: pointer;
-    }
-    
-    
+    } 
 }
 
 

@@ -4,7 +4,47 @@ const aboutLink = homeLinks[1];
 const projectsLink = homeLinks[2];
 const contactLink = homeLinks[3];
 
+const mainNav = document.querySelector('#main_navigation');
+
 const homeLinkPopup = document.querySelector('#test1');
+
+const mainHamburgerIcon = document.querySelector('#main_nav_hamburger');
+
+const mediaQuery500px = window.matchMedia('(max-width: 500px)');
+
+// if (mediaQuery500px.matches) {
+//     console.log("view port is 500px");
+// }
+
+mediaQuery500px.addEventListener('change', function () {
+    console.log('viewport is 500px');
+})
+function checkVisibility(element) {
+    let elementClassList = element.classList;
+
+    // if element doesn't have a class, mean it has to be visible
+    if (elementClassList.length === 0) {
+        return true;
+    }
+
+    // loop through the classlist collection/array and check if ANY of its classes are equal to 'hidden', if equal return false (will cause function to return and stop)
+    for (let i = 0 ; i < elementClassList.length ; i++) {
+        if (elementClassList[i] === 'visibility-off' || elementClassList[i] === 'hidden') return false;
+    }
+    // if reaches here, mean no elements have a class of hidden and hence, element doesn't have a class of hidden and is visible
+    return true;
+}
+
+
+function visibilityOn(element) {
+    element.classList.add('visibility-on');
+    element.classList.remove('visibility-off');
+}
+
+function visibilityOff(element) {
+    element.classList.add('visibility-off')
+    element.classList.remove('visibility-on');
+}
 
 function toggleShow(element) {
     element.classList.add('show');
@@ -26,4 +66,15 @@ navLink.addEventListener('mouseout', function () {
     toggleHidden(homeLinkPopup);
 })
 
+mainHamburgerIcon.addEventListener('click', function () {
+    // if the mainHamburger is visible, then when it is clicked we want to hide
+    if (checkVisibility(mainHamburgerIcon)) {
+        // hide the menu
+        visibilityOff();
+    }
+    else {
+        // show the menu
+        visibilityOn();
+    }
+})
 
