@@ -71,15 +71,16 @@ function toggleHidden(element) {
     element.classList.remove('show');
 }
 
-navLink.addEventListener('mouseover', function () {
-    console.log("The nav link was pressed on by the user");
-    toggleShow(homeLinkPopup);
-})
+// for test popup under link
+// navLink.addEventListener('mouseover', function () {
+//     console.log("The nav link was pressed on by the user");
+//     toggleShow(homeLinkPopup);
+// })
 
-navLink.addEventListener('mouseout', function () {
-    console.log("user left the nav");
-    toggleHidden(homeLinkPopup);
-})
+// navLink.addEventListener('mouseout', function () {
+//     console.log("user left the nav");
+//     toggleHidden(homeLinkPopup);
+// })
 
 mainHamburgerIcon.addEventListener('click', function () {
     // if the mainHamburger is visible, then when it is clicked we want to hide
